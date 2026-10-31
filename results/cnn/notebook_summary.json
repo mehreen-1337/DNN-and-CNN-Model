@@ -1,0 +1,13 @@
+{
+  "dataset": "Fashion-MNIST",
+  "split": {
+    "train": 55000,
+    "val": 5000,
+    "test": 10000
+  },
+  "cnn_accuracy": 0.9262,
+  "cnn_macro_f1": 0.9261185771678742,
+  "mlp_accuracy": 0.8639,
+  "best_epoch": 15,
+  "train_seconds": 65.26
+}

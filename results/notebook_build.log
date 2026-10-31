@@ -1,0 +1,7 @@
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[nb ] notebooks/DNN_Bank_Marketing.ipynb  (34 cells)
+[nb ] notebooks/CNN_Fashion_MNIST.ipynb  (28 cells)
+[run] DNN_Bank_Marketing.ipynb executed
+[run] CNN_Fashion_MNIST.ipynb executed
+done

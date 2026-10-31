@@ -1,0 +1,141 @@
+{
+  "dataset": "UCI Bank Marketing (ID 222), bank-full.csv",
+  "n_rows": 45211,
+  "n_features": 51,
+  "n_positive": 5289,
+  "positive_rate": 0.11698480458295547,
+  "params": 55425,
+  "device": "cuda",
+  "config": {
+    "val_size": 0.15,
+    "test_size": 0.15,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "max_epochs": 300,
+    "patience": 25,
+    "hidden": [
+      256,
+      128,
+      64
+    ],
+    "dropout": [
+      0.3,
+      0.3,
+      0.2
+    ]
+  },
+  "split": {
+    "train": 31647,
+    "val": 6782,
+    "test": 6782
+  },
+  "dnn": {
+    "threshold": 0.7862456440925598,
+    "accuracy": 0.8867590681214981,
+    "precision": 0.5102711585866886,
+    "recall": 0.7831021437578815,
+    "f1": 0.6179104477611941,
+    "roc_auc": 0.9240421226220328,
+    "pr_auc": 0.6010360531110877,
+    "brier": 0.11743663251399994,
+    "tn": 5393,
+    "fp": 596,
+    "fn": 172,
+    "tp": 621,
+    "f1_at_0.5": 0.5543608124253285,
+    "recall_at_0.5": 0.8776796973518285
+  },
+  "logistic_regression": {
+    "threshold": 0.7862456440925598,
+    "accuracy": 0.8947213211442052,
+    "precision": 0.5501905972045743,
+    "recall": 0.5460277427490542,
+    "f1": 0.5481012658227848,
+    "roc_auc": 0.9046650679671874,
+    "pr_auc": 0.526049293464857,
+    "brier": 0.12117824608451856,
+    "tn": 5635,
+    "fp": 354,
+    "fn": 360,
+    "tp": 433
+  },
+  "ablation_no_duration": {
+    "threshold": 0.719696581363678,
+    "accuracy": 0.8807136537894427,
+    "precision": 0.4896640826873385,
+    "recall": 0.47793190416141235,
+    "f1": 0.4837268666241225,
+    "roc_auc": 0.7811151044674799,
+    "pr_auc": 0.43680227149586054,
+    "brier": 0.1623263955116272,
+    "tn": 5594,
+    "fp": 395,
+    "fn": 414,
+    "tp": 379
+  },
+  "threshold_selected_on_val": 0.7862456440925598,
+  "val_f1_at_selected_threshold": 0.6297828335056878,
+  "top_features": [
+    {
+      "feature": "duration",
+      "delta_auc": 0.20025824983465906
+    },
+    {
+      "feature": "day",
+      "delta_auc": 0.030844968613117273
+    },
+    {
+      "feature": "contact_unknown",
+      "delta_auc": 0.013716487793826304
+    },
+    {
+      "feature": "poutcome_success",
+      "delta_auc": 0.01001217659024729
+    },
+    {
+      "feature": "month_feb",
+      "delta_auc": 0.009319713295307874
+    },
+    {
+      "feature": "month_may",
+      "delta_auc": 0.008641483745841682
+    },
+    {
+      "feature": "month_jul",
+      "delta_auc": 0.008623670508163572
+    },
+    {
+      "feature": "contact_cellular",
+      "delta_auc": 0.00849426133704143
+    },
+    {
+      "feature": "month_jan",
+      "delta_auc": 0.00696392314030112
+    },
+    {
+      "feature": "month_jun",
+      "delta_auc": 0.006951879201823807
+    },
+    {
+      "feature": "month_nov",
+      "delta_auc": 0.006853464222027883
+    },
+    {
+      "feature": "month_apr",
+      "delta_auc": 0.0060189371982303005
+    },
+    {
+      "feature": "month_mar",
+      "delta_auc": 0.005769888764121323
+    },
+    {
+      "feature": "poutcome_unknown",
+      "delta_auc": 0.005178682986905159
+    },
+    {
+      "feature": "month_aug",
+      "delta_auc": 0.004042531105260827
+    }
+  ]
+}
